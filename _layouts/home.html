@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <div class="posts">
+      {%- for post in site.posts -%}
+        <div class="post-card">
+          {%- if post.image -%}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" class="post-image">
+          {%- else -%}
+            <div class="default-image">
+              <span>{{ post.title | escape }}</span>
+            </div>
+          {%- endif -%}
+          <div class="post-content">
+            <h2>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h2>
+            <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+            {%- if site.show_excerpts -%}
+              <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+            {%- endif -%}
+            <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+</div>

@@ -1,0 +1,84 @@
+/* dark-mode.css */
+
+/* Define dark mode color variables */
+body.dark-mode {
+  --primary-color: #E6E6FA; /* Light Lavender */
+  --secondary-color: #080000; /* Almost Black */
+  --accent-color: #7FFFD4; /* Aquamarine */
+  --neutral-color: #2D2D2D; /* Dark Gray */
+  --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --card-bg-color: #1e1e1e; /* Dark background for cards */
+  --card-title-color: #ffffff; /* White color for titles */
+}
+
+/* Apply dark mode styles */
+body.dark-mode {
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark-mode a {
+  color: #f5f0f0;
+}
+
+body.dark-mode .site-title {
+  color: #f5f0f0;
+}
+
+body.dark-mode header, 
+body.dark-mode footer, 
+body.dark-mode nav {
+  color: var(--primary-color);
+}
+
+body.dark-mode pre,
+body.dark-mode code {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: var(--card-title-color);
+}
+
+/* Dark mode styles for post cards */
+body.dark-mode .post-card {
+  background: var(--card-bg-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .post-card:hover {
+  transform: translateY(-5px);
+}
+
+body.dark-mode .post-placeholder {
+  background: var(--gradient-bg);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body.dark-mode .post-title {
+  color: var(--card-title-color);
+  font-weight: bold;
+}
+
+body.dark-mode .read-more {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body.dark-mode .read-more:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    {%- include head.html -%}
+    <link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom-style.css' | relative_url }}">
+  </head>
+  <body>
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    <button id="toggle-theme" style="position: fixed; bottom: 1rem; right: 1rem; padding: 0.5rem 1rem;">🌓</button>
+    {%- include footer.html -%}
+    <script>
+      const button = document.getElementById('toggle-theme');
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+      button.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+    </script>
+  </body>
+</html>
