@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The State of Agents in 2025?"
-date: 2025-04-02 04:41:30 +0530
+date: 2025-04-02 22:41:30 +0530
 categories: ai agents crypto
 image: /assets/images/aiagents.jpeg
 ---
