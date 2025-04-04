@@ -5,7 +5,7 @@ date: 2025-03-20 14:41:30 +0530
 categories: web3 marketing product 
 image: /assets/images/OPL.jpeg
 ---
-[Openledger is the future of AI](/assets/images/OPL.png)
+[Openledger is the future of AI](/assets/images/OPL.jpeg)
 
 The future of AI depends on two critical factors: **Specialization** and **Attribution**.
 
@@ -45,7 +45,7 @@ With OpenLedger, you can:
 
 ### What Models is OpenLedger Working On?
 
-![Lifecycle](/assets/images/lifecycle.png)
+![Lifecycle](/assets/images/lifecycle.jpeg)
 
 
 OpenLedger utilizes foundational models and brings specialized intelligence to every sector imaginable.
