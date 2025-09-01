@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building Your First Agent API with Smol Agents + FastAPI"
-date: 2025-09-01 22:41:30 +0530
+date: 2025-09-01 00:00:00 +0530
 categories: ai agents crypto
 image: /assets/images/agent-tutorial-1.png
 ---
